@@ -18,17 +18,13 @@ while user_choice != "exit":
      
 #If user choice is not one of the three elements in the list, it will prompt the user to enter their choice again.
     if user_choice != "rock" and user_choice != "paper" and user_choice != "scissors":
-        user_score += 0
-        bot_score += 0
         user_input = input("\n  \nThat is not a valid option. \n \n Please make your selection to continue: \n ENTER EXIT TO LEAVE THE SIMULATION \n  \n")
         user_choice = user_input.lower()
         choices = ["rock" , "paper" , "scissors"]
         random_choice = random.choice(choices) 
 
 # Else if the element that the user chose is the same as the one that the bot has chosen, no points awarded, the following is displayed.  
-    elif user_choice == random_choice:
-        user_score += 0
-        bot_score += 0
+    elif user_choice == random_choice: 
         print("\n  \nThe computer also selected " , user_choice , ". Are you a computer?")
         user_input = input("Please make your selection to continue: \n ENTER EXIT TO LEAVE THE SIMULATION \n  \n" )
         user_choice = user_input.lower()
